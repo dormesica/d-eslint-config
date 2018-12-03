@@ -32,6 +32,35 @@ module.exports = {
         }],
         'no-extra-semi': 'error',
         'no-func-assign': 'error',
-        'no-inner-declarations': ['error', 'both']
+        'no-inner-declarations': ['error', 'both'],
+        'no-invalid-regexp': 'error',
+        'no-irregular-whitespace': ['error', {
+            'skipStrings': true,
+            'skipComments': false,
+            'skipRegExps': true,
+            'skipTemplates': true
+        }],
+        'no-misleading-character-class': 'warn',
+        'no-obj-calls': 'error',
+        'no-prototype-builtins': 'off',
+        'no-regex-spaces': 'error',
+        'no-sparse-arrays': 'error',
+        'no-template-curly-in-string': 'warn',
+        'no-unexpected-multiline': 'error',
+        'no-unreachable': 'error',
+        'no-unsafe-finally': 'error',
+        'no-unsafe-negation': 'error',
+        'require-atomic-updates': 'warn',
+        'use-isnan': 'error',
+        'valid-jsdoc': ['warn', {
+            'requireReturn': false,
+            'requireReturnType': true,
+            'matchDescription': ".+",  // require description
+            'requireParamDescription': true,
+            'requireReturnDescription': true,
+            'requireParamType': true
+        }],
+        'valid-typeof': 'error'
+
     }
 };
