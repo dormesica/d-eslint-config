@@ -15,7 +15,7 @@ module.exports = {
         'no-compare-neg-zero': 'warn',
         'no-cond-assign': ['warn', 'always'],
         'no-console': 'error',
-        'no-constant-condition': ['error', { 'checkLoops': false }],
+        'no-constant-condition': ['error', { checkLoops: false }],
         'no-control-regex': 'error',
         'no-debugger': 'error',
         'no-dupe-args': 'error',
@@ -26,19 +26,18 @@ module.exports = {
         'no-ex-assign': 'error',
         'no-extra-boolean-cast': 'error',
         'no-extra-parens': ['error', {
-            'nestedBinaryExpressions': true,
-            'ignoreJSX': 'multi-line',
-
+            nestedBinaryExpressions: true,
+            ignoreJSX: 'multi-line',
         }],
         'no-extra-semi': 'error',
         'no-func-assign': 'error',
         'no-inner-declarations': ['error', 'both'],
         'no-invalid-regexp': 'error',
         'no-irregular-whitespace': ['error', {
-            'skipStrings': true,
-            'skipComments': false,
-            'skipRegExps': true,
-            'skipTemplates': true
+            skipStrings: true,
+            skipComments: false,
+            skipRegExps: true,
+            skipTemplates: true,
         }],
         'no-misleading-character-class': 'warn',
         'no-obj-calls': 'error',
@@ -53,14 +52,40 @@ module.exports = {
         'require-atomic-updates': 'warn',
         'use-isnan': 'error',
         'valid-jsdoc': ['warn', {
-            'requireReturn': false,
-            'requireReturnType': true,
-            'matchDescription': ".+",  // require description
-            'requireParamDescription': true,
-            'requireReturnDescription': true,
-            'requireParamType': true
+            requireReturn: false,
+            requireReturnType: true,
+            matchDescription: '.+',  // require description
+            requireParamDescription: true,
+            requireReturnDescription: true,
+            requireParamType: true
         }],
-        'valid-typeof': 'error'
+        'valid-typeof': 'error',
 
+        // Best Practice
+        'accessor-pairs': ['warn', {
+            setWithoutGet: true,
+            getWithoutSet: false,
+        }],
+        'array-callback-return': 'error',
+        'block-scoped-var': 'error',
+        'class-methods-use-this': 'warn',
+        //'complexity': 'warn',
+        'consistent-return': ['warn', { treatUndefinedAsUnspecified: false }],
+        'curly': 'error',
+        'default-case': 'error',
+        //'dot-location': 'off', // TODO fill
+        'dot-notation': 'error',
+        'eqeqeq': 'error',
+        'guard-for-in': 'error',
+        'max-classes-per-file': ['error', 1],
+        'no-alert': 'error',
+        'no-caller': 'error',
+        'no-case-declarations': 'error',
+        'no-div-regex': 'error',
+        'no-else-return': ['error', { allowElseIf: false }],
+        'no-empty-function': ['error', { 'allow': ['arrowFunctions'] }],
+        'no-empty-pattern': 'error',
+        'no-eq-null': 'error',
+        'no-eval': 'error'
     }
 };
