@@ -1,10 +1,11 @@
 
 module.exports = {
     parserOptions: {
-        "ecmaVersion": 6,
-        "ecmaFeatures": {
-            "jsx": true,
-        }
+        'ecmaVersion': 6,
+        'ecmaFeatures': {
+            'jsx': true,
+        },
+        'sourceType': 'module',
     },
     rules: {
         // Possible Errors
@@ -86,6 +87,29 @@ module.exports = {
         'no-empty-function': ['error', { 'allow': ['arrowFunctions'] }],
         'no-empty-pattern': 'error',
         'no-eq-null': 'error',
-        'no-eval': 'error'
+        'no-eval': 'error',
+        'no-extend-native': 'off',  // working a lot with polyfills
+        'no-extra-bind': 'error',
+        'no-extra-label': 'error',
+        'no-fallthrough': 'error',
+        'no-floating-decimal': 'error',
+        'no-global-assign': 'error',
+        'no-implicit-coercion': 'error',
+        'no-implicit-globals': 'off',
+        'no-implied-eval': 'error',
+        'no-iterator': 'error',
+        'no-labels': 'error',
+        'no-lone-blocks': 'error',
+        'no-loop-func': 'error',
+        'no-magic-numbers': ['warn', {
+            'ignore': [1],
+            'ignoreArrayIndexes': true,
+        }],
+        'no-multi-spaces': ['error', {
+            'ignoreEOLComments': true,
+        }],
+        'no-multi-str': 'error',
+        'no-new': 'error',
+        'no-new-func': 'error',
     }
 };
