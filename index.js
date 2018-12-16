@@ -74,7 +74,7 @@ module.exports = {
         'consistent-return': ['warn', { treatUndefinedAsUnspecified: false }],
         'curly': 'error',
         'default-case': 'error',
-        //'dot-location': 'off', // TODO fill
+        //'dot-location': 'off', // TODO: fill
         'dot-notation': 'error',
         'eqeqeq': 'error',
         'guard-for-in': 'error',
@@ -126,5 +126,25 @@ module.exports = {
         'no-sequences': 'error',
         'no-throw-literal': 'error',
         'no-unmodified-loop-condition': 'error',
+        'no-unused-expressions': 'error',
+        'no-unused-labels': 'error',
+        'no-useless-call': 'error',
+        'no-useless-concat': 'error',
+        'no-useless-escape': 'error',
+        'no-useless-return': 'error',
+        'no-void': 'error',
+        'no-warning-comments': 'off',
+        'no-with': 'error',
+        'prefer-promise-reject-errors': 'error',
+        'radix': ['error', 'as-needed'],
+        'equire-await': 'error',
+        'require-unicode-regexp': 'off',
+        'vars-on-top': 'warn',  // TODO: should disallow var entirely
+        'wrap-iife': ['error', 'inside', {
+            functionPrototypeMethods: true,
+        }],
+        'yoda': ['error', 'never', {
+            exceptRange: true,
+        }],
     }
 };
