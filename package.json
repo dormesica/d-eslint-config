@@ -14,7 +14,7 @@
     "eslint"
   ],
   "author": "Dor Mesica <dormesica10@gmail.com>",
-  "license": "Apache-2.0",
+  "license": "Apache Public License v2",
   "bugs": {
     "url": "https://github.com/dormesica/d-eslint-config/issues"
   },
